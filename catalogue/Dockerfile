@@ -1,5 +1,6 @@
 FROM node:20
 WORKDIR /opt/server
+EXPOSE 8080
 COPY *.json .
 COPY *.js .
 RUN npm install
