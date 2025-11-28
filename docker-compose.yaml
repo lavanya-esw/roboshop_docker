@@ -12,8 +12,7 @@ services:
     depends_on: 
       - mongodb
   redis:
-    build: ./redis
-    image: lavanyaesw/redis:7.0
+    image: redis:7.0
     container_name: redis
     volumes:
       - redis:/data
@@ -24,8 +23,7 @@ services:
     volumes:
       - mysql:/var/lib/mysql
   rabbitmq:
-    build: ./rabbitmq
-    image: lavanyaesw/rabbitmq:3
+    image: rabbitmq:3
     container_name: rabbitmq
     volumes: 
       - rabbitmq:/var/lib/rabbitmq
