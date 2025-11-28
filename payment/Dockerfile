@@ -19,6 +19,8 @@ RUN pip3 install --prefix=/install -r requirements.txt
 # ===========================
 FROM python:3.9.25-alpine3.21
 EXPOSE 8080
+LABEL com.project="roboshop" \
+      component="catalogue"
 WORKDIR /opt/server
 # Runtime deps only
 RUN apk add --no-cache pcre
