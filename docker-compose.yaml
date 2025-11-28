@@ -79,7 +79,7 @@ networks:
     name: roboshop
     external: true
 volumes:
-  mondodb
-  redis
-  mysql
-  rabbitmq
+  mondodb:
+  redis:
+  mysql:
+  rabbitmq:
