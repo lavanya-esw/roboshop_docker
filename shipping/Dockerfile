@@ -9,7 +9,7 @@ FROM eclipse-temurin:17-jre-alpine
 WORKDIR /opt/server
 EXPOSE 8080
 LABEL com.project="roboshop" \
-      component="catalogue"
+      component="shipping"
 RUN addgroup -S roboshop && adduser -S roboshop -G roboshop && \
     chown -R roboshop:roboshop /opt/server
 ENV CART_ENDPOINT="cart:8080" \
